@@ -1,0 +1,139 @@
+:root {
+  --bg: #0d1128;
+  --panel: rgba(20, 30, 66, 0.82);
+  --line: #7be0ff;
+  --text: #f0f6ff;
+  --muted: #c4cce0;
+  --accent: #ffd166;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans TC", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 20% 15%, #233570 0%, transparent 40%),
+    radial-gradient(circle at 80% 5%, #441f62 0%, transparent 35%),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.hero {
+  min-height: 70vh;
+  border-bottom: 1px solid rgba(123, 224, 255, 0.2);
+  padding: 1.5rem 5vw 4rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.link {
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+}
+
+code {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 0.05rem 0.35rem;
+}
+
+.cta {
+  color: var(--bg);
+  background: var(--accent);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.hero-content {
+  max-width: 720px;
+  margin-top: 12vh;
+}
+
+.kicker {
+  color: var(--line);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+h1 {
+  margin: 0.2rem 0 0.5rem;
+  font-size: clamp(2.1rem, 7vw, 4.8rem);
+  letter-spacing: 0.03em;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+main {
+  width: min(1000px, 92vw);
+  margin: -3rem auto 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.panel {
+  border: 1px solid rgba(123, 224, 255, 0.25);
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  background: var(--panel);
+  backdrop-filter: blur(2px);
+}
+
+.panel h2 {
+  margin-top: 0;
+  color: var(--line);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+}
+
+article {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 0.8rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+ol,
+ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 1.5rem;
+  border-top: 1px solid rgba(123, 224, 255, 0.2);
+}
